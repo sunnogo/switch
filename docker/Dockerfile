@@ -40,7 +40,18 @@ RUN apt-get install -y \
       python-yaml \
       wget \
       ethtool \
-      vim
+      vim \
+      tcpdump \
+      tshark \
+      libpcap0.8 \
+      libpcap0.8-dev \
+      libpcap-dev \
+      quagga \
+      redis-server \
+      redis-tools \
+      gdb
+
+RUN pip install tenjin crc16
 
 # install scapy
 RUN mkdir -p /tmp/scapy ; \
